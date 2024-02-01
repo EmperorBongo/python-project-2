@@ -1,0 +1,71 @@
+/* Header styling */
+header {
+    background-color: #222; /* Dark background */
+    border-bottom: 3px solid #f00; /* Red border */
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* Title styling */
+header h1 {
+    color: #fff; /* White text */
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Main content styling */
+main {
+    width: 80%;
+    max-width: 1200px; /* Limit width for larger screens */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
+    border: 2px solid #f00; /* Red border */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); /* Red shadow */
+    color: #fff; /* White text */
+    margin-top: 20px; /* Add space between header and main content */
+}
+
+/* Cupcake container */
+.cupcake-container {
+    border: 2px solid #f00; /* Red border */
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+}
+
+/* Cupcake details */
+h3, h4, h5 {
+    color: #f00; /* Red text */
+    margin: 10px 0;
+}
+
+/* Order table */
+#cupcake-order {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+#cupcake-order th, #cupcake-order td {
+    border: 1px solid #fff; /* White border */
+    padding: 10px;
+    text-align: left;
+}
+
+#cupcake-order th {
+    background-color: #f00; /* Red background */
+    color: #fff; /* White text */
+}
+
+#cupcake-order tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+}
+
+#cupcake-order tr:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background on hover */
+}
