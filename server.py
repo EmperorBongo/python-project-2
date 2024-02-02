@@ -9,10 +9,13 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     return render_template('index.html')
-
+#below is simply a route
 @app.route("/cupcakes")
+#viewfuction that is being called by app.route
 def all_cupcakes():
+    #VARIBLE SETTING = TO OUR GET_CUPCAKES FUNCTION "STORE CSV IS A ARGUMENT"
     cupcakes = get_cupcakes("store.csv")
+    # RESPONSE FROM SERVER THAT IS MY COMPLETE HTML. CUPCAKES=CUPCAKES IS THE CONTEXT THAT JINJA HAS ACCESS TO.
     return render_template("cupcakes.html", cupcakes=cupcakes)
 
 @app.route("/add-cupcake/<name>")
@@ -43,4 +46,5 @@ def order():
 
 
 if __name__ == "__main__":
+    #APP.RUN IS FOR DEVELOPMENT ONLY DEBUG TRUE ON FOR DEV PURPOSES. 
     app.run(debug=True, port=9822)
